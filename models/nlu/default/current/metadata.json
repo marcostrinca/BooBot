@@ -1,5 +1,9 @@
 {
-    "entity_extractor_mitie": "entity_extractor.dat",
+    "intent_classifier_sklearn": "intent_classifier.pkl",
+    "regex_featurizer": null,
+    "trained_at": "20171213-224956",
+    "mitie_file": "./data/total_word_feature_extractor.dat",
+    "entity_synonyms": "entity_synonyms.json",
     "pipeline": [
         "rasa_nlu.utils.mitie_utils.MitieNLP",
         "rasa_nlu.tokenizers.mitie_tokenizer.MitieTokenizer",
@@ -10,14 +14,10 @@
         "rasa_nlu.featurizers.mitie_featurizer.MitieFeaturizer",
         "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier"
     ],
-    "rasa_nlu_version": "0.10.4",
-    "intent_classifier_sklearn": "intent_classifier.pkl",
+    "entity_extractor_mitie": "entity_extractor.dat",
     "language": "pt",
-    "mitie_feature_extractor_fingerprint": 12776837117594539165,
-    "ner_duckling_persisted": "ner_duckling.json",
     "training_data": "training_data.json",
-    "mitie_file": "./data/total_word_feature_extractor.dat",
-    "entity_synonyms": "entity_synonyms.json",
-    "regex_featurizer": null,
-    "trained_at": "20171210-154631"
+    "rasa_nlu_version": "0.10.4",
+    "ner_duckling_persisted": "ner_duckling.json",
+    "mitie_feature_extractor_fingerprint": 12776837117594539165
 }

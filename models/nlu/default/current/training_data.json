@@ -252,21 +252,21 @@
       },
       {
         "intent": "save_bookmark",
+        "text": "quero salvar o link www.github.com na categoria reposit\u00f3rios",
         "entities": [
           {
-            "end": 34,
             "entity": "url",
-            "value": "www.github.com",
-            "start": 20
+            "start": 20,
+            "end": 34,
+            "value": "www.github.com"
           },
           {
-            "end": 60,
             "entity": "field",
-            "value": "reposit\u00f3rios",
-            "start": 48
+            "start": 48,
+            "end": 60,
+            "value": "reposit\u00f3rios"
           }
-        ],
-        "text": "quero salvar o link www.github.com na categoria reposit\u00f3rios"
+        ]
       },
       {
         "intent": "save_bookmark",
@@ -318,207 +318,219 @@
       },
       {
         "intent": "save_bookmark",
+        "text": "salva este link com a hashtag python",
         "entities": [
           {
+            "entity": "field",
+            "start": 30,
             "end": 36,
-            "entity": "field",
-            "value": "python",
-            "start": 30
+            "value": "python"
           }
-        ],
-        "text": "salva este link com a hashtag python"
+        ]
       },
       {
         "intent": "save_bookmark",
+        "text": "coloca este link na categoria android",
         "entities": [
           {
+            "entity": "field",
+            "start": 30,
             "end": 37,
-            "entity": "field",
-            "value": "android",
-            "start": 30
+            "value": "android"
           }
-        ],
-        "text": "coloca este link na categoria android"
+        ]
       },
       {
         "intent": "save_bookmark",
+        "text": "salva esta url com as hashtags ios e android",
         "entities": [
           {
+            "entity": "field",
+            "start": 31,
             "end": 34,
-            "entity": "field",
-            "value": "ios",
-            "start": 31
+            "value": "ios"
           },
           {
-            "end": 44,
             "entity": "field",
-            "value": "android",
-            "start": 37
+            "start": 37,
+            "end": 44,
+            "value": "android"
           }
-        ],
-        "text": "salva esta url com as hashtags ios e android"
+        ]
       },
       {
         "intent": "save_bookmark",
+        "text": "salva esse link em machine learning e RNN",
         "entities": [
           {
+            "entity": "field",
+            "start": 19,
             "end": 35,
-            "entity": "field",
-            "value": "machine learning",
-            "start": 19
+            "value": "machine learning"
           },
           {
+            "entity": "field",
+            "start": 38,
             "end": 41,
-            "entity": "field",
-            "value": "RNN",
-            "start": 38
+            "value": "RNN"
           }
-        ],
-        "text": "salva esse link em machine learning e RNN"
+        ]
+      },
+      {
+        "intent": "save_bookmark",
+        "text": "coloca essa p\u00e1gina na categoria ai",
+        "entities": [
+          {
+            "entity": "field",
+            "start": 32,
+            "end": 34,
+            "value": "ai"
+          }
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "me mostra p\u00e1ginas na categoria python",
         "entities": [
           {
+            "entity": "field",
+            "start": 31,
             "end": 37,
-            "entity": "field",
-            "value": "python",
-            "start": 31
+            "value": "python"
           }
-        ],
-        "text": "me mostra p\u00e1ginas na categoria python"
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "quero ver os links page que tenho nas categorias android e php",
         "entities": [
           {
+            "entity": "field",
+            "start": 49,
             "end": 56,
-            "entity": "field",
-            "value": "android",
-            "start": 49
+            "value": "android"
           },
           {
+            "entity": "field",
+            "start": 59,
             "end": 62,
-            "entity": "field",
-            "value": "php",
-            "start": 59
+            "value": "php"
           }
-        ],
-        "text": "quero ver os links page que tenho nas categorias android e php"
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "links em python",
         "entities": [
           {
+            "entity": "field",
+            "start": 9,
             "end": 15,
-            "entity": "field",
-            "value": "python",
-            "start": 9
+            "value": "python"
           }
-        ],
-        "text": "links em python"
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "quais p\u00e1ginas eu tenho em programa\u00e7\u00e3o android",
         "entities": [
           {
+            "entity": "field",
+            "start": 26,
             "end": 37,
-            "entity": "field",
-            "value": "programa\u00e7\u00e3o",
-            "start": 26
+            "value": "programa\u00e7\u00e3o"
           },
           {
+            "entity": "field",
+            "start": 38,
             "end": 45,
-            "entity": "field",
-            "value": "android",
-            "start": 38
+            "value": "android"
           }
-        ],
-        "text": "quais p\u00e1ginas eu tenho em programa\u00e7\u00e3o android"
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "meus links na categoria machine learning RNN paper",
         "entities": [
           {
+            "entity": "field",
+            "start": 24,
             "end": 40,
-            "entity": "field",
-            "value": "machine learning",
-            "start": 24
+            "value": "machine learning"
           },
           {
+            "entity": "field",
+            "start": 41,
             "end": 44,
-            "entity": "field",
-            "value": "RNN",
-            "start": 41
+            "value": "RNN"
           },
           {
+            "entity": "field",
+            "start": 45,
             "end": 50,
-            "entity": "field",
-            "value": "paper",
-            "start": 45
+            "value": "paper"
           }
-        ],
-        "text": "meus links na categoria machine learning RNN paper"
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "lista tudo de python",
         "entities": [
           {
+            "entity": "field",
+            "start": 14,
             "end": 20,
-            "entity": "field",
-            "value": "python",
-            "start": 14
+            "value": "python"
           }
-        ],
-        "text": "lista tudo de python"
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "lista tudo que eu tenho de python",
         "entities": [
           {
+            "entity": "field",
+            "start": 27,
             "end": 33,
-            "entity": "field",
-            "value": "python",
-            "start": 27
+            "value": "python"
           }
-        ],
-        "text": "lista tudo que eu tenho de python"
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "me mostra tudo de ios",
         "entities": [
           {
+            "entity": "field",
+            "start": 18,
             "end": 21,
-            "entity": "field",
-            "value": "ios",
-            "start": 18
+            "value": "ios"
           }
-        ],
-        "text": "me mostra tudo de ios"
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "que p\u00e1ginas de android eu tenho ",
         "entities": [
           {
+            "entity": "field",
+            "start": 15,
             "end": 22,
-            "entity": "field",
-            "value": "android",
-            "start": 15
+            "value": "android"
           }
-        ],
-        "text": "que p\u00e1ginas de android eu tenho "
+        ]
       },
       {
         "intent": "list_bookmarks",
+        "text": "o que que eu tenho de machine learning",
         "entities": [
           {
-            "end": 38,
             "entity": "field",
-            "value": "machine learning",
-            "start": 22
+            "start": 22,
+            "end": 38,
+            "value": "machine learning"
           }
-        ],
-        "text": "o que que eu tenho de machine learning"
+        ]
       },
       {
         "intent": "list_bookmarks",
@@ -562,123 +574,123 @@
       },
       {
         "intent": "open_bookmark",
+        "text": "abre a p\u00e1gina do Google",
         "entities": [
           {
-            "end": 23,
             "entity": "page",
-            "value": "Google",
-            "start": 17
+            "start": 17,
+            "end": 23,
+            "value": "Google"
           }
-        ],
-        "text": "abre a p\u00e1gina do Google"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "abre a p\u00e1gina da Apple",
         "entities": [
           {
+            "entity": "page",
+            "start": 17,
             "end": 22,
-            "entity": "page",
-            "value": "Apple",
-            "start": 17
+            "value": "Apple"
           }
-        ],
-        "text": "abre a p\u00e1gina da Apple"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "abra este link medrecords.com.br",
         "entities": [
           {
-            "end": 32,
             "entity": "url",
-            "value": "medrecords.com.br",
-            "start": 15
+            "start": 15,
+            "end": 32,
+            "value": "medrecords.com.br"
           }
-        ],
-        "text": "abra este link medrecords.com.br"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "abre o GitHub",
         "entities": [
           {
+            "entity": "page",
+            "start": 7,
             "end": 13,
-            "entity": "page",
-            "value": "GitHub",
-            "start": 7
+            "value": "GitHub"
           }
-        ],
-        "text": "abre o GitHub"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "acessa o GitHub",
         "entities": [
           {
+            "entity": "page",
+            "start": 9,
             "end": 15,
-            "entity": "page",
-            "value": "GitHub",
-            "start": 9
+            "value": "GitHub"
           }
-        ],
-        "text": "acessa o GitHub"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "preciso da p\u00e1gina do GitHub",
         "entities": [
           {
+            "entity": "page",
+            "start": 21,
             "end": 27,
-            "entity": "page",
-            "value": "GitHub",
-            "start": 21
+            "value": "GitHub"
           }
-        ],
-        "text": "preciso da p\u00e1gina do GitHub"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "entra no Facebook",
         "entities": [
           {
+            "entity": "page",
+            "start": 9,
             "end": 17,
-            "entity": "page",
-            "value": "Facebook",
-            "start": 9
+            "value": "Facebook"
           }
-        ],
-        "text": "entra no Facebook"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "vai na p\u00e1gina do Google",
         "entities": [
           {
+            "entity": "page",
+            "start": 17,
             "end": 23,
-            "entity": "page",
-            "value": "Google",
-            "start": 17
+            "value": "Google"
           }
-        ],
-        "text": "vai na p\u00e1gina do Google"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "vai no Face",
         "entities": [
           {
+            "entity": "page",
+            "start": 7,
             "end": 11,
-            "entity": "page",
-            "value": "Facebook",
-            "start": 7
+            "value": "Facebook"
           }
-        ],
-        "text": "vai no Face"
+        ]
       },
       {
         "intent": "open_bookmark",
+        "text": "abre a p\u00e1gina do Twitter",
         "entities": [
           {
-            "end": 24,
             "entity": "page",
-            "value": "Twitter",
-            "start": 17
+            "start": 17,
+            "end": 24,
+            "value": "Twitter"
           }
-        ],
-        "text": "abre a p\u00e1gina do Twitter"
+        ]
       },
       {
         "intent": "wrong_answer",
@@ -694,45 +706,45 @@
       },
       {
         "intent": "wrong_answer",
+        "text": "n\u00e3o, n\u00e3o, eu quero a p\u00e1gina do Face",
         "entities": [
           {
+            "entity": "page",
+            "start": 31,
             "end": 35,
-            "entity": "page",
-            "value": "Facebook",
-            "start": 31
+            "value": "Facebook"
           }
-        ],
-        "text": "n\u00e3o, n\u00e3o, eu quero a p\u00e1gina do Face"
+        ]
       },
       {
         "intent": "wrong_answer",
+        "text": "eita, ta errado, eu falei Google",
         "entities": [
           {
+            "entity": "page",
+            "start": 26,
             "end": 32,
-            "entity": "page",
-            "value": "Google",
-            "start": 26
+            "value": "Google"
           }
-        ],
-        "text": "eita, ta errado, eu falei Google"
+        ]
       },
       {
         "intent": "wrong_answer",
+        "text": "n\u00e3o bot, era Google e n\u00e3o Face",
         "entities": [
           {
-            "end": 19,
             "entity": "page",
-            "value": "Google",
-            "start": 13
+            "start": 13,
+            "end": 19,
+            "value": "Google"
           },
           {
-            "end": 30,
             "entity": "page",
-            "value": "Facebook",
-            "start": 26
+            "start": 26,
+            "end": 30,
+            "value": "Facebook"
           }
-        ],
-        "text": "n\u00e3o bot, era Google e n\u00e3o Face"
+        ]
       },
       {
         "intent": "wrong_answer",
@@ -748,27 +760,27 @@
       },
       {
         "intent": "wrong_answer",
+        "text": "n\u00f3, que feio, eu falei Android",
         "entities": [
           {
-            "end": 30,
             "entity": "field",
-            "value": "Android",
-            "start": 23
+            "start": 23,
+            "end": 30,
+            "value": "Android"
           }
-        ],
-        "text": "n\u00f3, que feio, eu falei Android"
+        ]
       },
       {
         "intent": "wrong_answer",
+        "text": "eu falei machine learning",
         "entities": [
           {
-            "end": 25,
             "entity": "field",
-            "value": "machine learning",
-            "start": 9
+            "start": 9,
+            "end": 25,
+            "value": "machine learning"
           }
-        ],
-        "text": "eu falei machine learning"
+        ]
       }
     ],
     "regex_features": []

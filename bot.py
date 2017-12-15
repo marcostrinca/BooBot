@@ -101,6 +101,8 @@ class ActionListBookmarks(Action):
         return 'action_list_bookmarks'
 
     def run(self, dispatcher, tracker, domain):
+
+        print(tracker.get_slot())
         
         with connection.cursor() as cursor:
               
@@ -181,7 +183,7 @@ def run(serve_forever=True):
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level="INFO")
+    logging.basicConfig(level="DEBUG")
 
     parser = argparse.ArgumentParser(
             description='acordando o bot')
