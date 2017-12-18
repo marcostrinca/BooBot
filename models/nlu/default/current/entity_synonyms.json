@@ -1,10 +1,10 @@
 {
-  "rnn": "RNN",
-  "github": "GitHub",
-  "apple": "Apple",
-  "face": "Facebook",
   "google": "Google",
+  "rnn": "RNN",
+  "face": "Facebook",
+  "apple": "Apple",
+  "facebook": "Facebook",
   "twitter": "Twitter",
-  "android": "Android",
-  "facebook": "Facebook"
+  "github": "GitHub",
+  "android": "Android"
 }

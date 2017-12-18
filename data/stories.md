@@ -1,111 +1,100 @@
 ## story 1
-* _list_bookmarks
+* list_bookmarks
 	- action_list_bookmarks
-* _thanks
+* thanks
 	- utter_youarewelcome
 
 
 ## story 2
-* _list_bookmarks
+* list_bookmarks
 	- action_list_bookmarks
-
 
 ## story 3
-* _open_bookmark
+* open_bookmark
 	- action_open_bookmark
-* _thanks
+* thanks
 	- utter_youarewelcome
-
 
 ## story 4
-* _save_bookmark
+* save_bookmark
 	- action_save_bookmark
-* _thanks
+* thanks
 	- utter_youarewelcome
-
 
 ## story 5
-* _greet
+* greet
 	- utter_greet
-* _list_bookmarks
+* list_bookmarks
 	- action_list_bookmarks
-* _thanks
+* thanks
 	- utter_youarewelcome
-
 
 ## story 6
-* _greet
+* greet
 	- utter_greet
-* _list_bookmarks
+* list_bookmarks
 	- action_list_bookmarks
-
 
 ## story 7
-* _greet
+* greet
 	- utter_greet
-* _open_bookmark
+* open_bookmark
 	- action_open_bookmark
-* _thanks
+* thanks
 	- utter_youarewelcome
-
 
 ## story 8
-* _greet
+* greet
 	- utter_greet
-* _save_bookmark
+* save_bookmark
 	- action_save_bookmark
-* _thanks
+* thanks
 	- utter_youarewelcome
-
 
 ## story 9
-* _greet
+* greet
 	- utter_greet
-* _list_bookmarks
+* list_bookmarks
 	- action_list_bookmarks
-* _wrong_answer
+* wrong_answer
 	- utter_wrong
-* _list_bookmarks
+* list_bookmarks
 	- action_list_bookmarks
-* _thanks
+* thanks
 	- utter_youarewelcome
-* _goodbye
+* goodbye
 	- utter_goodbye
-
 
 ## story 11
-* _greet
+* greet
 	- utter_greet
-* _open_bookmark
+* open_bookmark
 	- action_open_bookmark
-* _wrong_answer
+* wrong_answer
 	- utter_wrong
-* _open_bookmark
+* open_bookmark
 	- action_open_bookmark
-* _thanks
+* thanks
 	- utter_youarewelcome
-* _goodbye
+* goodbye
 	- utter_goodbye
 
-
 ## story 12
-* _greet
+* greet
 	- utter_greet
-* _open_bookmark
+* open_bookmark
 	- action_open_bookmark
-* _wrong_answer
+* wrong_answer
 	- utter_wrong
-* _open_bookmark
+* open_bookmark
 	- action_open_bookmark
-
-
 
 ## story 13
-* _greet
+* greet
 	- utter_greet
-* _save_bookmark
+* save_bookmark
 	- action_save_bookmark
-* _thanks
+* thanks
 	- utter_youarewelcome
-* _goodbye
+* goodbye
 	- utter_goodbye

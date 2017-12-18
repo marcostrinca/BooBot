@@ -1,4 +1,16 @@
 action_factory: null
+action_names:
+- utter_greet
+- utter_ask_link
+- utter_confirm
+- utter_goodbye
+- utter_cool
+- utter_notcool
+- utter_wrong
+- utter_youarewelcome
+- action_save_bookmark
+- action_open_bookmark
+- action_list_bookmarks
 actions:
 - utter_greet
 - utter_ask_link
@@ -30,11 +42,14 @@ intents:
 - wrong_answer
 slots:
   field:
-    type: list
+    initial_value: null
+    type: rasa_core.slots.ListSlot
   page:
-    type: text
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   url:
-    type: text
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
   utter_ask_link:
   - text: Qual link você quer salvar?

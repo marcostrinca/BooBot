@@ -20,13 +20,15 @@ import warnings
 from rasa_core.actions.action import Action
 from rasa_core.agent import Agent
 from rasa_core.channels.console import ConsoleInputChannel
+from rasa_core.channels.custom import CustomInput
+from rasa_core.channels.rest import HttpInputChannel
 from rasa_core.interpreter import RasaNLUInterpreter
-from rasa_core.policies.keras_policy import KerasPolicy
-from rasa_core.policies.memoization import MemoizationPolicy
-
-logger = logging.getLogger(__name__)
+from rasa_core.policies.sklearn_policy import SklearnPolicy
 
 import pymysql.cursors
+logger = logging.getLogger(__name__)
+
+from CustomInput import SimpleWebBot
 
 # Connect to the database.
 connection = pymysql.connect(host='104.131.139.15',
@@ -35,9 +37,7 @@ connection = pymysql.connect(host='104.131.139.15',
                              db='boobot',
                              charset='utf8',
                              cursorclass=pymysql.cursors.DictCursor)
-
 print ("connect successful!!")
-
 
 class ActionSaveBookmark(Action):
     def name(self):
@@ -50,7 +50,7 @@ class ActionSaveBookmark(Action):
         # checo se tenho URL
         if val_url is not None:
 
-            b_id = 0;
+            b_id = 0; # variavel pra guardar id do bookmark assim que gravar no BD
 
             with connection.cursor() as cursor:
                 # SQL 
@@ -102,7 +102,7 @@ class ActionListBookmarks(Action):
 
     def run(self, dispatcher, tracker, domain):
 
-        print(tracker.get_slot())
+        print(tracker.get_slot('field'))
         
         with connection.cursor() as cursor:
               
@@ -117,48 +117,17 @@ class ActionListBookmarks(Action):
         dispatcher.utter_message("isso foi o que eu achei")
         return []
 
-class MyCustomPolicy(KerasPolicy):
-    def model_architecture(self, num_features, num_actions, max_history_len):
-        """Build a Keras model and return a compiled model."""
-        from keras.layers import LSTM, Activation, Masking, Dense
-        from keras.models import Sequential
+def train_dialogue(domain_file="domain.yml", model_path="models/dialogue", training_data_file="data/stories.md"):
 
-        n_hidden = 80  # size of hidden layer in LSTM
-        # Build Model
-        batch_shape = (None, max_history_len, num_features)
-
-        model = Sequential()
-        model.add(Masking(-1, batch_input_shape=batch_shape))
-        model.add(LSTM(n_hidden, batch_input_shape=batch_shape))
-        model.add(Dense(input_dim=n_hidden, output_dim=num_actions))
-        model.add(Activation('softmax'))
-
-        model.compile(loss='categorical_crossentropy',
-                      optimizer='adam',
-                      metrics=['accuracy'])
-
-        logger.debug(model.summary())
-        return model
-
-
-def train_dialogue(domain_file="domain.yml",
-                   model_path="models/dialogue",
-                   training_data_file="data/stories.md"):
-    # agent = Agent(domain_file, policies=[MemoizationPolicy()])
-    agent = Agent(domain_file, policies=[MemoizationPolicy(), MyCustomPolicy()])
+    agent = Agent(domain_file, policies=[SklearnPolicy()])
 
     agent.train(
             training_data_file,
-            max_history=12,
-            epochs=100,
-            batch_size=60,
-            augmentation_factor=30,
-            validation_split=0.2
+            max_history=12
     )
 
     agent.persist(model_path)
     return agent
-
 
 def train_nlu():
     from rasa_nlu.converters import load_data
@@ -172,18 +141,18 @@ def train_nlu():
 
     return model_directory
 
-
 def run(serve_forever=True):
     agent = Agent.load("models/dialogue",
                        interpreter=RasaNLUInterpreter("models/nlu/default/current"))
 
-    if serve_forever:
-        agent.handle_channel(ConsoleInputChannel())
+    if serve_forever: 
+        # agent.handle_channel(HttpInputChannel(8080, "", CustomInput("http://localhost")))
+        agent.handle_channel(HttpInputChannel(8080, "", SimpleWebBot()))
     return agent
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level="DEBUG")
+    logging.basicConfig(level="INFO")
 
     parser = argparse.ArgumentParser(
             description='acordando o bot')

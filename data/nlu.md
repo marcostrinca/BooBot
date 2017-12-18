@@ -115,6 +115,7 @@
 ## intent:open_bookmark
 - abre a página do [Google](page)
 - abre a página da [Apple](page)
+- abre a página [www.google.com](url)
 - abra este link [medrecords.com.br](url)
 - abre o [GitHub](page)
 - acessa o [GitHub](page)
