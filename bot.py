@@ -147,7 +147,7 @@ def run(serve_forever=True):
 
     if serve_forever: 
         # agent.handle_channel(HttpInputChannel(8080, "", CustomInput("http://localhost")))
-        agent.handle_channel(HttpInputChannel(8080, "", SimpleWebBot()))
+        agent.handle_channel(HttpInputChannel(8080, "", SimpleWebChannel()))
     return agent
 
 

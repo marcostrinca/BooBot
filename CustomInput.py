@@ -14,7 +14,7 @@ from rasa_core.channels.rest import HttpInputComponent
 logger = logging.getLogger(__name__)
 
 
-class SimpleWebBot(HttpInputComponent):
+class SimpleWebChannel(HttpInputComponent):
 	"""A simple web bot that listens on a url and responds."""
 
 	def blueprint(self, on_new_message):
@@ -28,7 +28,9 @@ class SimpleWebBot(HttpInputComponent):
 		def webhook():
 			sender_id = request.form.get("sender")
 			text = request.form.get("message")
+			currentURL = request.form.get("currentURL")
 			print(sender_id)
+			print(currentURL)
 			print(text)
 			out = CollectingOutputChannel()
 			on_new_message(UserMessage(text, out, sender_id))
