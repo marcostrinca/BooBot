@@ -3,8 +3,10 @@ slots:
     type: text
   url:
     type: text
-  field:
+  tag:
     type: list
+  verb:
+    type: text
 
 intents:
   - greet
@@ -16,12 +18,14 @@ intents:
   - save_bookmark
   - list_bookmarks
   - open_bookmark
+  - update_bookmark
   - wrong_answer
 
 entities:
   - page
   - url
-  - field
+  - tag
+  - verb
 
 templates:
   utter_greet:
@@ -49,6 +53,9 @@ templates:
   utter_youarewelcome:
   - text: "Disponha"
   - text: ";-)"
+  - text: "não por isso, brou"
+  - text: "bora"
+  - text: "tamo junto"
 
   utter_wrong:
   - text: "Ops. Deixa eu tentar de novo... me fala o que vc quer de outra maneira, por favor."
@@ -56,6 +63,9 @@ templates:
   utter_goodbye:
   - text: "Falou :("
   - text: "Tchau"
+  - text: "Até..."
+  - text: "toca"
+  - text: "vai"
 
 actions:
   - utter_greet
@@ -69,3 +79,4 @@ actions:
   - bot.ActionSaveBookmark
   - bot.ActionOpenBookmark
   - bot.ActionListBookmarks
+  - bot.ActionUpdateBookmark

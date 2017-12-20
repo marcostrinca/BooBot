@@ -11,6 +11,7 @@ action_names:
 - action_save_bookmark
 - action_open_bookmark
 - action_list_bookmarks
+- action_update_bookmark
 actions:
 - utter_greet
 - utter_ask_link
@@ -23,12 +24,14 @@ actions:
 - bot.ActionSaveBookmark
 - bot.ActionOpenBookmark
 - bot.ActionListBookmarks
+- bot.ActionUpdateBookmark
 config:
   store_entities_as_slots: true
 entities:
 - page
 - url
-- field
+- tag
+- verb
 intents:
 - greet
 - default
@@ -39,15 +42,19 @@ intents:
 - save_bookmark
 - list_bookmarks
 - open_bookmark
+- update_bookmark
 - wrong_answer
 slots:
-  field:
-    initial_value: null
-    type: rasa_core.slots.ListSlot
   page:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  tag:
+    initial_value: null
+    type: rasa_core.slots.ListSlot
   url:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  verb:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
@@ -66,6 +73,9 @@ templates:
   utter_goodbye:
   - text: Falou :(
   - text: Tchau
+  - text: Até...
+  - text: toca
+  - text: vai
   utter_greet:
   - text: Opa! Em que posso ser útil?
   utter_notcool:
@@ -77,4 +87,7 @@ templates:
   utter_youarewelcome:
   - text: Disponha
   - text: ;-)
+  - text: não por isso, brou
+  - text: bora
+  - text: tamo junto
 topics: []

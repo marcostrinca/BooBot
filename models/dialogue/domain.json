@@ -9,13 +9,16 @@
     "intent_save_bookmark",
     "intent_list_bookmarks",
     "intent_open_bookmark",
+    "intent_update_bookmark",
     "intent_wrong_answer",
     "entity_page",
     "entity_url",
-    "entity_field",
-    "slot_field_0",
+    "entity_tag",
+    "entity_verb",
     "slot_page_0",
+    "slot_tag_0",
     "slot_url_0",
+    "slot_verb_0",
     "prev_action_listen",
     "prev_action_restart",
     "prev_utter_greet",
@@ -28,6 +31,7 @@
     "prev_utter_youarewelcome",
     "prev_action_save_bookmark",
     "prev_action_open_bookmark",
-    "prev_action_list_bookmarks"
+    "prev_action_list_bookmarks",
+    "prev_action_update_bookmark"
   ]
 }
