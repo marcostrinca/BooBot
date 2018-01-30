@@ -1,0 +1,82 @@
+slots:
+  page:
+    type: text
+  url:
+    type: text
+  tag:
+    type: list
+  verb:
+    type: text
+
+intents:
+  - greet
+  - default
+  - goodbye
+  - mood_affirm
+  - mood_deny
+  - thanks
+  - save_bookmark
+  - list_bookmarks
+  - open_bookmark
+  - update_bookmark
+  - wrong_answer
+
+entities:
+  - page
+  - url
+  - tag
+  - verb
+
+templates:
+  utter_greet:
+  - text: "Opa! Em que posso ser útil?"
+
+  utter_ask_link:
+  - text: "Qual link você quer salvar?"
+
+  utter_confirm:
+  - text: "tudo certo?"
+    buttons:
+    - title: "sim"
+      payload: "sim"
+    - title: "não"
+      payload: "não"
+
+  utter_cool:
+  - text: "maravilha :)"
+  - text: "coisa linda"
+
+  utter_notcool:
+  - text: "hmm, que pena. Eu fiz tudo tão certinho!"
+  - text: "droga"
+
+  utter_youarewelcome:
+  - text: "Disponha"
+  - text: ";-)"
+  - text: "não por isso, brou"
+  - text: "bora"
+  - text: "tamo junto"
+
+  utter_wrong:
+  - text: "Ops. Deixa eu tentar de novo... me fala o que vc quer de outra maneira, por favor."
+
+  utter_goodbye:
+  - text: "Falou :("
+  - text: "Tchau"
+  - text: "Até..."
+  - text: "toca"
+  - text: "vai"
+
+actions:
+  - utter_greet
+  - utter_ask_link
+  - utter_confirm
+  - utter_goodbye
+  - utter_cool
+  - utter_notcool
+  - utter_wrong
+  - utter_youarewelcome
+  - bot.ActionSaveBookmark
+  - bot.ActionOpenBookmark
+  - bot.ActionListBookmarks
+  - bot.ActionUpdateBookmark

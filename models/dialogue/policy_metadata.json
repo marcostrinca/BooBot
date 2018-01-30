@@ -1,0 +1,13 @@
+{
+  "rasa_core": "0.8.0a4",
+  "max_history": 12,
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.sklearn_policy.SklearnPolicy"
+  ],
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": []
+    }
+  }
+}

@@ -1,0 +1,1107 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "oi",
+        "intent": "greet"
+      },
+      {
+        "text": "fala a\u00ed",
+        "intent": "greet"
+      },
+      {
+        "text": "ol\u00e1",
+        "intent": "greet"
+      },
+      {
+        "text": "da\u00ed",
+        "intent": "greet"
+      },
+      {
+        "text": "opa",
+        "intent": "greet"
+      },
+      {
+        "text": "boa noite",
+        "intent": "greet"
+      },
+      {
+        "text": "bom dia",
+        "intent": "greet"
+      },
+      {
+        "text": "boa tarde",
+        "intent": "greet"
+      },
+      {
+        "text": "dia",
+        "intent": "greet"
+      },
+      {
+        "text": "noite",
+        "intent": "greet"
+      },
+      {
+        "text": "tarde",
+        "intent": "greet"
+      },
+      {
+        "text": "tudo bem?",
+        "intent": "greet"
+      },
+      {
+        "text": "fala, bot",
+        "intent": "greet"
+      },
+      {
+        "text": "tchau",
+        "intent": "goodbye"
+      },
+      {
+        "text": "vai a\u00ed",
+        "intent": "goodbye"
+      },
+      {
+        "text": "vai",
+        "intent": "goodbye"
+      },
+      {
+        "text": "vejo voc\u00ea depois",
+        "intent": "goodbye"
+      },
+      {
+        "text": "at\u00e9 mais",
+        "intent": "goodbye"
+      },
+      {
+        "text": "at\u00e9 mais tarde",
+        "intent": "goodbye"
+      },
+      {
+        "text": "abra\u00e7o",
+        "intent": "goodbye"
+      },
+      {
+        "text": "fui",
+        "intent": "goodbye"
+      },
+      {
+        "text": "nos falamos",
+        "intent": "goodbye"
+      },
+      {
+        "text": "nos vemos depois",
+        "intent": "goodbye"
+      },
+      {
+        "text": "valeu",
+        "intent": "goodbye"
+      },
+      {
+        "text": "see you",
+        "intent": "goodbye"
+      },
+      {
+        "text": "sim",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "claro",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "com certeza",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "correto",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "certo",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "perfeito",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "certinho",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "isso a\u00ed",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "est\u00e1 \u00f3timo",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "\u00f3timo",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "siiim",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "cert\u00edssimo",
+        "intent": "mood_affirm"
+      },
+      {
+        "text": "n\u00e3o",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "nunca",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "acho que n\u00e3o",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "n\u00e3o gosto disso",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "nem",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "n\u00e3o gosto",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "n\u00e3o quero isso n\u00e3o",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "n\u00e3o quero",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "para",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "nope",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "nem ferrando",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "nem fodendo",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "de jeito nenhum",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "no way",
+        "intent": "mood_deny"
+      },
+      {
+        "text": "obrigado",
+        "intent": "thanks"
+      },
+      {
+        "text": "muito obrigado",
+        "intent": "thanks"
+      },
+      {
+        "text": "obrigado meu querido",
+        "intent": "thanks"
+      },
+      {
+        "text": "obrigado, bot",
+        "intent": "thanks"
+      },
+      {
+        "text": "agrade\u00e7o",
+        "intent": "thanks"
+      },
+      {
+        "text": "agradecido",
+        "intent": "thanks"
+      },
+      {
+        "text": "valeu, bot",
+        "intent": "thanks"
+      },
+      {
+        "text": "valeu",
+        "intent": "thanks"
+      },
+      {
+        "text": "muito bom, obrigado",
+        "intent": "thanks"
+      },
+      {
+        "text": "brigad\u00edssimo",
+        "intent": "thanks"
+      },
+      {
+        "text": "thanks",
+        "intent": "thanks"
+      },
+      {
+        "text": "nada por hora, obrigado",
+        "intent": "thanks"
+      },
+      {
+        "text": "agora nada, valeu",
+        "intent": "thanks"
+      },
+      {
+        "text": "nada, obrigado",
+        "intent": "thanks"
+      },
+      {
+        "text": "quero salvar o link www.github.com na categoria reposit\u00f3rios",
+        "entities": [
+          {
+            "value": "salvar",
+            "entity": "verb",
+            "start": 6,
+            "end": 12
+          },
+          {
+            "value": "www.github.com",
+            "entity": "url",
+            "start": 20,
+            "end": 34
+          },
+          {
+            "value": "reposit\u00f3rios",
+            "entity": "tag",
+            "start": 48,
+            "end": 60
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "quero salvar um link",
+        "entities": [
+          {
+            "value": "salvar",
+            "entity": "verb",
+            "start": 6,
+            "end": 12
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "salva um link pra mim",
+        "entities": [
+          {
+            "value": "salva",
+            "entity": "verb",
+            "start": 0,
+            "end": 5
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "salva este link pra mim",
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "guarda esta p\u00e1gina pra mim por favor",
+        "entities": [
+          {
+            "value": "guarda",
+            "entity": "verb",
+            "start": 0,
+            "end": 6
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "faz um favor de guardar esta p\u00e1gina pra mim",
+        "entities": [
+          {
+            "value": "guardar",
+            "entity": "verb",
+            "start": 16,
+            "end": 23
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "faz um favor de guardar este link pra mim",
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "salva isso",
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "guarda isso",
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "salvar a p\u00e1gina ",
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "salvar o link",
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "guarda a p\u00e1gina",
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "guarda o link",
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "salva este link com a hashtag python",
+        "entities": [
+          {
+            "value": "python",
+            "entity": "tag",
+            "start": 30,
+            "end": 36
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "coloca este link na categoria android",
+        "entities": [
+          {
+            "value": "coloca",
+            "entity": "verb",
+            "start": 0,
+            "end": 6
+          },
+          {
+            "value": "android",
+            "entity": "tag",
+            "start": 30,
+            "end": 37
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "salva esta url com as hashtags ios e android",
+        "entities": [
+          {
+            "value": "ios",
+            "entity": "tag",
+            "start": 31,
+            "end": 34
+          },
+          {
+            "value": "android",
+            "entity": "tag",
+            "start": 37,
+            "end": 44
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "salva esse link em machine learning e RNN",
+        "entities": [
+          {
+            "value": "machine learning",
+            "entity": "tag",
+            "start": 19,
+            "end": 35
+          },
+          {
+            "value": "RNN",
+            "entity": "tag",
+            "start": 38,
+            "end": 41
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "coloca essa p\u00e1gina na categoria ai",
+        "entities": [
+          {
+            "value": "ai",
+            "entity": "tag",
+            "start": 32,
+            "end": 34
+          }
+        ],
+        "intent": "save_bookmark"
+      },
+      {
+        "text": "listar todos os meus favoritos",
+        "entities": [
+          {
+            "value": "listar",
+            "entity": "verb",
+            "start": 0,
+            "end": 6
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "me mostra p\u00e1ginas na categoria python",
+        "entities": [
+          {
+            "value": "python",
+            "entity": "tag",
+            "start": 31,
+            "end": 37
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "quero ver os links que tenho nas categorias android e php",
+        "entities": [
+          {
+            "value": "android",
+            "entity": "tag",
+            "start": 44,
+            "end": 51
+          },
+          {
+            "value": "php",
+            "entity": "tag",
+            "start": 54,
+            "end": 57
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "links em python",
+        "entities": [
+          {
+            "value": "python",
+            "entity": "tag",
+            "start": 9,
+            "end": 15
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "quais p\u00e1ginas eu tenho em programa\u00e7\u00e3o android",
+        "entities": [
+          {
+            "value": "programa\u00e7\u00e3o",
+            "entity": "tag",
+            "start": 26,
+            "end": 37
+          },
+          {
+            "value": "android",
+            "entity": "tag",
+            "start": 38,
+            "end": 45
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "meus links na categoria machine learning RNN paper",
+        "entities": [
+          {
+            "value": "machine learning",
+            "entity": "tag",
+            "start": 24,
+            "end": 40
+          },
+          {
+            "value": "RNN",
+            "entity": "tag",
+            "start": 41,
+            "end": 44
+          },
+          {
+            "value": "paper",
+            "entity": "tag",
+            "start": 45,
+            "end": 50
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "lista tudo de python",
+        "entities": [
+          {
+            "value": "python",
+            "entity": "tag",
+            "start": 14,
+            "end": 20
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "lista tudo que eu tenho de python",
+        "entities": [
+          {
+            "value": "python",
+            "entity": "tag",
+            "start": 27,
+            "end": 33
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "me mostra tudo de ios",
+        "entities": [
+          {
+            "value": "ios",
+            "entity": "tag",
+            "start": 18,
+            "end": 21
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "que p\u00e1ginas de android eu tenho ",
+        "entities": [
+          {
+            "value": "android",
+            "entity": "tag",
+            "start": 15,
+            "end": 22
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "o que que eu tenho de machine learning",
+        "entities": [
+          {
+            "value": "machine learning",
+            "entity": "tag",
+            "start": 22,
+            "end": 38
+          }
+        ],
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "quero ver meus bookmarks",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "me mostra meus bookmarks",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "lista meus bookmarks",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "quero ver meus favoritos",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "me mostra meus favoritos",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "lista meus favoritos",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "me mostra tudo",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "quero ver meus bookmarks",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "quero ver meus favoritos",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "quero ver meus links",
+        "intent": "list_bookmarks"
+      },
+      {
+        "text": "abre a p\u00e1gina do Google",
+        "entities": [
+          {
+            "value": "abre",
+            "entity": "verb",
+            "start": 0,
+            "end": 4
+          },
+          {
+            "value": "Google",
+            "entity": "page",
+            "start": 17,
+            "end": 23
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "abre a p\u00e1gina da Apple",
+        "entities": [
+          {
+            "value": "Apple",
+            "entity": "page",
+            "start": 17,
+            "end": 22
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "abre a p\u00e1gina www.google.com",
+        "entities": [
+          {
+            "value": "www.google.com",
+            "entity": "url",
+            "start": 14,
+            "end": 28
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "abra este link medrecords.com.br",
+        "entities": [
+          {
+            "value": "abra",
+            "entity": "verb",
+            "start": 0,
+            "end": 4
+          },
+          {
+            "value": "medrecords.com.br",
+            "entity": "url",
+            "start": 15,
+            "end": 32
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "abre o GitHub",
+        "entities": [
+          {
+            "value": "GitHub",
+            "entity": "page",
+            "start": 7,
+            "end": 13
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "acessa o GitHub",
+        "entities": [
+          {
+            "value": "acessa",
+            "entity": "verb",
+            "start": 0,
+            "end": 6
+          },
+          {
+            "value": "GitHub",
+            "entity": "page",
+            "start": 9,
+            "end": 15
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "preciso da p\u00e1gina do GitHub",
+        "entities": [
+          {
+            "value": "preciso da p\u00e1gina",
+            "entity": "verb",
+            "start": 0,
+            "end": 17
+          },
+          {
+            "value": "GitHub",
+            "entity": "page",
+            "start": 21,
+            "end": 27
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "entra no Facebook",
+        "entities": [
+          {
+            "value": "entra",
+            "entity": "verb",
+            "start": 0,
+            "end": 5
+          },
+          {
+            "value": "Facebook",
+            "entity": "page",
+            "start": 9,
+            "end": 17
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "vai na p\u00e1gina do Google",
+        "entities": [
+          {
+            "value": "vai",
+            "entity": "verb",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "value": "Google",
+            "entity": "page",
+            "start": 17,
+            "end": 23
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "vai no Face",
+        "entities": [
+          {
+            "value": "Facebook",
+            "entity": "page",
+            "start": 7,
+            "end": 11
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "abre a p\u00e1gina do Twitter",
+        "entities": [
+          {
+            "value": "Twitter",
+            "entity": "page",
+            "start": 17,
+            "end": 24
+          }
+        ],
+        "intent": "open_bookmark"
+      },
+      {
+        "text": "adiciona a este link a categoria ai",
+        "entities": [
+          {
+            "value": "adiciona",
+            "entity": "verb",
+            "start": 0,
+            "end": 8
+          },
+          {
+            "value": "ai",
+            "entity": "tag",
+            "start": 33,
+            "end": 35
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "adicione a tag AI",
+        "entities": [
+          {
+            "value": "adicione",
+            "entity": "verb",
+            "start": 0,
+            "end": 8
+          },
+          {
+            "value": "AI",
+            "entity": "tag",
+            "start": 15,
+            "end": 17
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "remove a categoria rnn",
+        "entities": [
+          {
+            "value": "remove",
+            "entity": "verb",
+            "start": 0,
+            "end": 6
+          },
+          {
+            "value": "rnn",
+            "entity": "tag",
+            "start": 19,
+            "end": 22
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "remove desta p\u00e1gina a categoria CNN",
+        "entities": [
+          {
+            "value": "CNN",
+            "entity": "tag",
+            "start": 32,
+            "end": 35
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "insere a tag matem\u00e1tica",
+        "entities": [
+          {
+            "value": "insere",
+            "entity": "verb",
+            "start": 0,
+            "end": 6
+          },
+          {
+            "value": "matem\u00e1tica",
+            "entity": "tag",
+            "start": 13,
+            "end": 23
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "remove a hashtag matematica",
+        "entities": [
+          {
+            "value": "matem\u00e1tica",
+            "entity": "tag",
+            "start": 17,
+            "end": 27
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "pode deletar este link",
+        "entities": [
+          {
+            "value": "deletar",
+            "entity": "verb",
+            "start": 5,
+            "end": 12
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "deleta esta p\u00e1gina",
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "deleta a categoria python deste link",
+        "entities": [
+          {
+            "value": "python",
+            "entity": "tag",
+            "start": 19,
+            "end": 25
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "deleta este link",
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "apaga este link",
+        "entities": [
+          {
+            "value": "apaga",
+            "entity": "verb",
+            "start": 0,
+            "end": 5
+          }
+        ],
+        "intent": "update_bookmark"
+      },
+      {
+        "text": "voc\u00ea errou",
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "n\u00e3o era isso",
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "era outra coisa",
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "n\u00e3o, n\u00e3o, eu quero a p\u00e1gina do Face",
+        "entities": [
+          {
+            "value": "Facebook",
+            "entity": "page",
+            "start": 31,
+            "end": 35
+          }
+        ],
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "eita, ta errado, eu falei Google",
+        "entities": [
+          {
+            "value": "Google",
+            "entity": "page",
+            "start": 26,
+            "end": 32
+          }
+        ],
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "n\u00e3o bot, era Google e n\u00e3o Face",
+        "entities": [
+          {
+            "value": "Google",
+            "entity": "page",
+            "start": 13,
+            "end": 19
+          },
+          {
+            "value": "Facebook",
+            "entity": "page",
+            "start": 26,
+            "end": 30
+          }
+        ],
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "vixe, ta errado",
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "vixe, errou feio",
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "caramba bot, ta errando muito",
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "n\u00f3, que feio, eu falei Android",
+        "entities": [
+          {
+            "value": "Android",
+            "entity": "tag",
+            "start": 23,
+            "end": 30
+          }
+        ],
+        "intent": "wrong_answer"
+      },
+      {
+        "text": "eu falei machine learning",
+        "entities": [
+          {
+            "value": "machine learning",
+            "entity": "tag",
+            "start": 9,
+            "end": 25
+          }
+        ],
+        "intent": "wrong_answer"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "listar",
+        "synonyms": [
+          "mostra",
+          "quero ver",
+          "que p\u00e1ginas",
+          "meus links",
+          "mostrar",
+          "meus favoritos",
+          "que links",
+          "quais p\u00e1ginas",
+          "minhas p\u00e1ginas",
+          "meus bookmarks",
+          "lista meus favoritos",
+          "lista"
+        ]
+      },
+      {
+        "value": "deletar",
+        "synonyms": [
+          "apaga",
+          "apague",
+          "apagar",
+          "delete",
+          "deleta",
+          "remova",
+          "remove"
+        ]
+      },
+      {
+        "value": "inserir",
+        "synonyms": [
+          "insere",
+          "insira",
+          "adiciona",
+          "adicionar",
+          "adicione"
+        ]
+      },
+      {
+        "value": "abrir",
+        "synonyms": [
+          "abre",
+          "acessar",
+          "vai",
+          "acesse",
+          "acessa",
+          "abra",
+          "entra"
+        ]
+      },
+      {
+        "value": "salvar",
+        "synonyms": [
+          "guarda",
+          "salve",
+          "guarde",
+          "salva",
+          "coloca",
+          "colocar"
+        ]
+      }
+    ],
+    "regex_features": []
+  }
+}

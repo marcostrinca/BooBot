@@ -1,0 +1,93 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_ask_link
+- utter_confirm
+- utter_goodbye
+- utter_cool
+- utter_notcool
+- utter_wrong
+- utter_youarewelcome
+- action_save_bookmark
+- action_open_bookmark
+- action_list_bookmarks
+- action_update_bookmark
+actions:
+- utter_greet
+- utter_ask_link
+- utter_confirm
+- utter_goodbye
+- utter_cool
+- utter_notcool
+- utter_wrong
+- utter_youarewelcome
+- bot.ActionSaveBookmark
+- bot.ActionOpenBookmark
+- bot.ActionListBookmarks
+- bot.ActionUpdateBookmark
+config:
+  store_entities_as_slots: true
+entities:
+- page
+- url
+- tag
+- verb
+intents:
+- greet
+- default
+- goodbye
+- mood_affirm
+- mood_deny
+- thanks
+- save_bookmark
+- list_bookmarks
+- open_bookmark
+- update_bookmark
+- wrong_answer
+slots:
+  page:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  tag:
+    initial_value: null
+    type: rasa_core.slots.ListSlot
+  url:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  verb:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_link:
+  - text: Qual link você quer salvar?
+  utter_confirm:
+  - buttons:
+    - payload: sim
+      title: sim
+    - payload: não
+      title: não
+    text: tudo certo?
+  utter_cool:
+  - text: maravilha :)
+  - text: coisa linda
+  utter_goodbye:
+  - text: Falou :(
+  - text: Tchau
+  - text: Até...
+  - text: toca
+  - text: vai
+  utter_greet:
+  - text: Opa! Em que posso ser útil?
+  utter_notcool:
+  - text: hmm, que pena. Eu fiz tudo tão certinho!
+  - text: droga
+  utter_wrong:
+  - text: Ops. Deixa eu tentar de novo... me fala o que vc quer de outra maneira,
+      por favor.
+  utter_youarewelcome:
+  - text: Disponha
+  - text: ;-)
+  - text: não por isso, brou
+  - text: bora
+  - text: tamo junto
+topics: []
