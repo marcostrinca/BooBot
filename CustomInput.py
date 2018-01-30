@@ -11,6 +11,10 @@ from rasa_core.channels.channel import UserMessage
 from rasa_core.channels.direct import CollectingOutputChannel
 from rasa_core.channels.rest import HttpInputComponent
 
+from rasa_core.trackers import DialogueStateTracker
+from rasa_core.slots import Slot, TextSlot
+from rasa_core.events import SlotSet
+
 logger = logging.getLogger(__name__)
 
 
@@ -26,12 +30,23 @@ class SimpleWebChannel(HttpInputComponent):
 
 		@custom_webhook.route("/webhook", methods=['POST'])
 		def webhook():
+
+			# get variable from post
 			sender_id = request.form.get("sender")
 			text = request.form.get("message")
-			currentURL = request.form.get("currentURL")
-			print(sender_id)
-			print(currentURL)
 			print(text)
+			currentURL = request.form.get("currentURL")
+			print(currentURL)
+
+			# get tracker state
+			# t_store = TrackerStore()
+			# txt_slot = TextSlot('url')
+			# tracker = DialogueStateTracker(sender_id=sender_id, slots=[txt_slot])
+			# print(tracker.current_state())
+			SlotSet('url', 'currentURL')
+			# print(tracker.current_state())
+
+			# send the bot response
 			out = CollectingOutputChannel()
 			on_new_message(UserMessage(text, out, sender_id))
 			return jsonify([{"r": r[1]} for r in out.messages])

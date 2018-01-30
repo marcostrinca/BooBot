@@ -103,22 +103,24 @@
 
 ## intent:list_bookmarks
 - [listar](verb) todos os meus favoritos
+- lista tudo de [python](tag)
+- listar
+- lista tudo que eu tenho de [python](tag)
+- lista meus bookmarks
+- lista meus favoritos
+- favoritos na categoria [rasa](tag)
 - me mostra páginas na categoria [python](tag)
 - quero ver os links que tenho nas categorias [android](tag) e [php](tag)
 - links em [python](tag)
 - quais páginas eu tenho em [programação](tag) [android](tag)
 - meus links na categoria [machine learning](tag) [RNN](tag) [paper](tag)
-- lista tudo de [python](tag)
-- lista tudo que eu tenho de [python](tag)
 - me mostra tudo de [ios](tag)
 - que páginas de [android](tag) eu tenho 
 - o que que eu tenho de [machine learning](tag)
 - quero ver meus bookmarks
 - me mostra meus bookmarks
-- lista meus bookmarks
 - quero ver meus favoritos
 - me mostra meus favoritos
-- lista meus favoritos
 - me mostra tudo
 - quero ver meus bookmarks
 - quero ver meus favoritos

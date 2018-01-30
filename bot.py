@@ -30,13 +30,13 @@ logger = logging.getLogger(__name__)
 from CustomInput import SimpleWebChannel
 
 # Connect to the database.
-connection = pymysql.connect(host='104.131.139.15',
-							 user='trinca',
-							 password='Mrctrinca@23',                             
-							 db='boobot',
-							 charset='utf8',
-							 cursorclass=pymysql.cursors.DictCursor)
-print ("connect successful!!")
+# connection = pymysql.connect(host='104.131.139.15',
+# 							 user='trinca',
+# 							 password='Mrctrinca@23',                             
+# 							 db='boobot',
+# 							 charset='utf8',
+# 							 cursorclass=pymysql.cursors.DictCursor)
+# print ("connect successful!!")
 
 class ActionSaveBookmark(Action):
 	def name(self):
@@ -168,7 +168,6 @@ def train_dialogue(domain_file="domain.yml", model_path="models/dialogue", train
 	return agent
 
 def train_nlu():
-	print("NLU Trainer")
 	from rasa_nlu.converters import load_data
 	from rasa_nlu.config import RasaNLUConfig
 	from rasa_nlu.model import Trainer
@@ -180,7 +179,6 @@ def train_nlu():
 
 	return model_directory
 
-
 def run(serve_forever=True):
 	model_u = "models/nlu/default/current"
 	model_d = "models/dialogue"
@@ -190,7 +188,6 @@ def run(serve_forever=True):
 		# agent.handle_channel(ConsoleInputChannel())
 		agent.handle_channel(HttpInputChannel(8080, "", SimpleWebChannel()))
 	return agent
-
 
 if __name__ == '__main__':
 	logging.basicConfig(level="DEBUG")
